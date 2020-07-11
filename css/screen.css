@@ -99,6 +99,7 @@ header div.hero h1 {
 section {
   padding: 0 30px;
 }
+section::after{content: '';display: block; clear: both;}
 
 /* section main */
 section.main {
