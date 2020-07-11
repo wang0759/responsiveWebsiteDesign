@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+  padding: 0;
+}
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Text */
+h1 {
+  margin: 0 0 1em 0;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+h4 {
+  margin: 0 0 1.5em 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: #007eff;
+}
+a:visited {
+  color: #65b1ff;
+}
+
+a.btn {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 15px;
+  transition: background-color 0.5s;
+}
+a.btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* Header */
+
+header {
+  height: 430px;
+  background: #cf0004 url(../images/banner_1200.jpg) no-repeat center bottom;
+  position: relative;
+}
+
+header a.logo {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 66px;
+  background: url(../images/logo.svg) no-repeat 0 0;
+  background-size: contain;
+  top: 15px;
+  left: 20px;
+}
+
+header a.logo span {
+  display: none;
+}
+
+header div.hero {
+  position: absolute;
+  width: 42%;
+  top: 130px;
+  left: 55%;
+}
+
+header div.hero h1 {
+  line-height: 1em;
+  margin: 0 0 30px 0;
+  color: #fff;
+}
+
+/* section All */
+section {
+  padding: 0 30px;
+}
+
+/* section main */
+section.main {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+section.main aside {
+  width: 33%;
+  float: left;
+  text-align: left;
+}
+section.main .content {
+  margin: 15px;
+  background: no-repeat center top;
+  background-size: 75px 75px;
+  padding-top: 85px;
+}
+section.main aside h3 a {
+  color: #000;
+  text-decoration: none;
+}
+section.main aside h3 a:hover {
+  text-decoration: underline;
+}
+
+section.main aside .content.trending {
+  background-image: url(../images/icon_star.svg);
+}
+section.main aside .content.find-it {
+  background-image: url(../images/icon_marker.svg);
+}
+section.main aside .content.tools {
+  background-image: url(../images/icon_gear.svg);
+}
