@@ -68,6 +68,7 @@ header {
 }
 
 header a.logo {
+  z-index: 1;
   position: absolute;
   display: block;
   width: 160px;
@@ -196,8 +197,13 @@ section.how-to blockquote {
   bottom: 0;
   right: 4%;
 }
-section.how-to blockquote p{margin:30px 30px 20px 50px}
-section.how-to blockquote p.quote{font-style: italic;font-size: 1.2em;}
+section.how-to blockquote p {
+  margin: 30px 30px 20px 50px;
+}
+section.how-to blockquote p.quote {
+  font-style: italic;
+  font-size: 1.2em;
+}
 
 section.how-to blockquote p.credit {
   color: #777;
@@ -227,4 +233,77 @@ section.how-to blockquote p.credit::before {
   position: absolute;
   top: -1px;
   left: 0;
+}
+/* Navigation */
+nav {
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 50px 0 0 0;
+  width: 100%;
+}
+nav::after{content:'';display: block;clear: both;}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+nav ul li:hover{
+  background-color: #2b0306;
+}
+nav ul li:hover > ul{display: block;}
+
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 125px;
+  position: relative;
+}
+
+nav ul li a:visited{color:#fff;}
+nav ul li a:hover{background-color: #6d0911;}
+nav ul ul{position: absolute; top:100%;background-color: #2b0306;
+display: none;}
+nav ul ul li{position: relative;}
+nav ul ul ul{left:100%;top:0px;}
+
+/* top-level */
+nav > ul{padding-left: 200px;}
+nav > ul > li{float: left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+  font-size: 0.8em;
+  margin: 40px;
+  color: #999;
+}
+footer .content {
+  display: inline;
+}
+footer a {
+  margin-left: 30px;
+  color: #777;
+}
+footer a:visited {
+  color: #777;
+}
+footer a:hover {
+  color: #000;
 }
