@@ -372,6 +372,7 @@ footer a:hover {
     background-image: url(../images/banner_825.jpg);
   }
   header div.hero {
+    width: auto;
     top: 120px;
     left: 48%;
   }
@@ -411,12 +412,13 @@ footer a:hover {
   }
 
   header div.hero {
+    width: auto;
     top: 100px;
     left: 48%;
   }
 
   header div.hero h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
   section.main {
@@ -432,10 +434,7 @@ footer a:hover {
   }
 
   nav {
-    padding-top: 80px;
-  }
-  nav > ul {
-    padding-left: 10px;
+    padding-top: 0;
   }
 }
 
@@ -447,13 +446,13 @@ footer a:hover {
     margin-bottom: 0px;
   }
   a.btn {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   header {
-    height: 160px;
+    height: 200px;
     background-image: url(../images/banner_625.jpg);
-    background-position: left top;
+    background-position: left bottom;
   }
 
   header a.logo {
@@ -467,7 +466,7 @@ footer a:hover {
   }
 
   header div.hero {
-    width: 300px;
+    width: auto;
     top: 70px;
     left: 130px;
   }
@@ -493,8 +492,6 @@ footer a:hover {
     min-height: initial;
   }
 
-  
-
   /* section how to */
   section.how-to aside {
     width: 100%;
@@ -505,59 +502,140 @@ footer a:hover {
   section.how-to aside div.content {
     padding: 20px 20px 20px 150px;
   }
-section.how-to aside div.content p{
-  font-size: .9em;
+  section.how-to aside div.content p {
+    font-size: 0.9em;
+  }
+  section.how-to aside div.content img {
+    display: inline-block;
+    width: 130px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+  }
+
+  section.how-to blockquote {
+    margin: 0 20px 0 40px;
+    width: 90%;
+    padding: 1px 0px 20px 0px;
+    position: relative;
+  }
+  section.how-to blockquote p.credit {
+    margin-bottom: 0;
+  }
+
+  nav {
+    position: static;
+    width: auto;
+    padding: 20px 15px;
+    background-color: #4b0a0c;
+  }
+
+  nav ul,
+  nav ul ul,
+  nav ul ul ul {
+    display: block;
+    position: static;
+  }
+
+  nav > ul {
+    padding: 0;
+  }
+  nav > ul > li {
+    float: none;
+    margin-top: 25px;
+  }
+
+  nav ul li:hover {
+    background: none;
+  }
+  nav ul li a {
+    width: auto;
+    display: block;
+    margin: 8px 10px;
+    padding: 8px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  nav ul ul {
+    background: none;
+  }
+  nav ul ul li a {
+    margin-left: 30px;
+  }
+  nav ul ul ul li a {
+    margin-left: 60px;
+  }
+
+  nav a[aria-haspopup="true"]::after {
+    display: none;
+  }
+
+  footer div.content {
+    display: block;
+    margin-top: 15px;
+  }
+  footer div.content a {
+    margin: 0 20px 0 0;
+  }
 }
-section.how-to aside div.content img{
-  display: inline-block;
-  width:130px;
-  position: absolute;
-  top:30px;left:0px;
+
+@media screen and (max-width: 425px) {
+  /* header */
+  haeder {
+    height: 110px;
+    background-image: url(../images/banner_425.jpg);
+  }
+
+  header a.logo {
+    height: 36px;
+    background: rgba(0, 0, 0, 0.65) url(../images/logo_small.svg) no-repeat
+      center center;
+    background-size: 126px 17px;
+  }
+  header div.hero {
+    width: 100%;
+    left: 0px;
+    top: 40px;
+    text-align: center;
+  }
+  header div.hero h1 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  header div.hero a.btn {
+    padding: 2px 30px;
+    font-size: 0.8em;
+  }
+  header div.hero a.btn span {
+    display: none;
+  }
+
+  /* section how to */
+  section.how-to aside div.content {
+    padding: 140px 20px 20px 0px;
+  }
+  section.how-to aside div.content img {
+    width: auto;
+    height: 100px;
+    top: 30px;
+  }
+  section.how-to blockquote {
+    margin: 10px 40px 0 20px;
+  }
+
+  /* footer */
+  footer::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer div.content a {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    float: left;
+    clear: both;
+  }
 }
-
-section.how-to blockquote{
-  margin: 0 20px 0 40px;
-  width:90%;
-  padding:1px 0px 20px 0px;
-  position: relative;
-}
-section.how-to blockquote p.credit{margin-bottom: 0;}
-
-nav {
-  position: static;
-  width: auto;
-  padding: 20px 15px;
-  background-color: #4b0a0c;
-}
-
-nav ul,
-nav ul ul,
-nav ul ul ul{
-  display: block; position: static;
-
-}
-
-nav > ul{padding:0;}
-nav > ul > li{float: none;margin-top: 25px;}
-
-nav ul li:hover{background: none;}
-nav ul li a{
-  width: auto;
-  display: block;
-  margin: 8px 10px;
-  padding:8px 15px;
-  border:1px solid rgba(255,255,255,.2)
-}
-nav ul li a:hover{background-color: rgba(255,255,255,.2);}
-nav ul ul{background: none;}
-nav ul ul li a{margin-left: 30px;}
-nav ul ul ul li a{margin-left: 60px;}
-
-nav a[aria-haspopup="true"]::after{display: none;}
-
-footer div.content{display: block;margin-top: 15px;}
-footer div.content a{margin:0 20px 0 0 }
-
-
-}
-
