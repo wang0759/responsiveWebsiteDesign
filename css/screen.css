@@ -380,7 +380,7 @@ footer a:hover {
   }
   header div.hero {
     width: auto;
-    top: 120px;
+    top: 130px;
     left: 48%;
   }
   header div.hero a {
@@ -396,6 +396,9 @@ footer a:hover {
   }
   section.how-to blockquote p.credit {
     font-size: 0.85em;
+  }
+  nav {
+    padding-top: 0;
   }
 }
 
@@ -420,7 +423,7 @@ footer a:hover {
 
   header div.hero {
     width: auto;
-    top: 100px;
+    top: 130px;
     left: 48%;
   }
 
@@ -590,10 +593,10 @@ footer a:hover {
 
 @media screen and (max-width: 425px) {
   /* header */
-  haeder {
+  header {
     height: 120px;
     background-image: url(../images/banner_425.jpg);
-    background-image: url(/866-536x354.jpg);
+    /* background-image: url(/866-536x354.jpg); */
   }
 
   header a.logo {
@@ -605,7 +608,7 @@ footer a:hover {
   header div.hero {
     width: 100%;
     left: 0px;
-    top: 60px;
+    top: 50px;
     text-align: center;
   }
   header div.hero h1 {
