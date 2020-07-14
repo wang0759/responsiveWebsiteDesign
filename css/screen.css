@@ -422,8 +422,13 @@ footer a:hover {
   }
 
   header div.hero {
+<<<<<<< HEAD
     width: auto;
     top: 130px;
+=======
+    width: 100%;
+    top: 100px;
+>>>>>>> 1dbfa32833c676926972d1819d577eb5320d9e04
     left: 48%;
   }
 
