@@ -595,8 +595,8 @@ footer a:hover {
   /* header */
   header {
     height: 120px;
-    background-image: url(../images/banner_425.jpg);
-    /* background-image: url(/866-536x354.jpg); */
+    /* background-image: url(../images/banner_425.jpg); */
+    background-image: url(/866-536x354.jpg);
   }
 
   header a.logo {
